@@ -39,6 +39,7 @@ public class TicTacToe {
                     if(board[numInput-1].equals(String.valueOf(numInput))) {
                         board[numInput - 1] = turn; // set slot to "X" or "O"
 
+                        // swap turn
                         if (turn.equals("X")) {
                             turn = "O";
                         } else {
@@ -47,8 +48,7 @@ public class TicTacToe {
 
                         printBoard();
                         winner = checkWinner(); // winner = null, "X", "O" or "Draw"
-                        // swap turn
-                        System.out.println("test");
+
 
 
                     }
